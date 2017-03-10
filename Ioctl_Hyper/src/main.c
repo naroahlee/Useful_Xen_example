@@ -15,10 +15,10 @@ int main(int argc, char* argv[])
 	int fd;
 	long s64xenver;
 
-    privcmd_hypercall_t call = {
-        .op = __HYPERVISOR_xen_version,
-        .arg = { XENVER_version, 0},
-    };
+	privcmd_hypercall_t call = {
+		.op = __HYPERVISOR_xen_version,
+		.arg = { XENVER_version, 0},
+	};
 
 	fd = open("/dev/xen/privcmd", O_RDWR|O_CLOEXEC);
 
