@@ -7,7 +7,7 @@ LDLIBS = -lm -lpthread -lxenctrl
 vpath %.c ${SRC_PATH}
 
 .PHONY: all clean
-ALL = main
+ALL = xen_ver xen_rtds_boost
 
 all: ${ALL}
 	cscope -Rb
@@ -19,6 +19,9 @@ clean:
 %.o: %.c
 	${CC} ${CFLAG} -c $^ -o $@
 
-main: main.o
+xen_ver: xen_ver.o
+	${CC} ${CFLAG} $^ ${LDLIBS} -o $@
+
+xen_rtds_boost: xen_rtds_boost.o
 	${CC} ${CFLAG} $^ ${LDLIBS} -o $@
 

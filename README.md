@@ -4,7 +4,8 @@ Very small hypercall examples
 xc_Hypercall: 
 An example of how to leverage libxenctrl to invoke a hypercall.
 libxenctrl is a hypercall wrapper.
-Only availiable in Dom0... Maybe available in DomU, but libxenctrl is needed.
+- Only availiable in Dom0... Maybe available in DomU, but libxenctrl is needed.
++ Yes, we are able to leverage libxenctrl even in DomU.
 
 Ioctl_Hypercall:
 An example of how to use IOCTL to pass hypercall to a kernel module (driver)

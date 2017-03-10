@@ -1,5 +1,217 @@
-cscope 15 /home/lihaoran/Program/Useful_Xen_example/xc_Hypercall               0000386796
-	@src/main.c
+cscope 15 /home/lihaoran/Program/Useful_Xen_example/xc_Hypercall               0000387845
+	@src/xen_domctl.c
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~<¡dlib.h
+>
+
+3 
+	~<¡ršg.h
+>
+
+4 
+	~<¡dšt.h
+>
+
+5 
+	~<uni¡d.h
+>
+
+6 
+	~<x’ù¾.h
+>
+
+9 
+	$maš
+(
+¬gc
+, * 
+¬gv
+[])
+
+11 
+s64x’v”
+ = 0;
+
+12 
+xc_š‹rçû
+ *
+pxch
+;
+
+14 
+pxch
+ = 
+	`xc_š‹rçû_Ý’
+(
+NULL
+, NULL, 0);
+
+15 
+s64x’v”
+ = 
+	`xc_v”siÚ
+(
+pxch
+, 
+XENVER_v”siÚ
+, 
+NULL
+);
+
+16 
+	`xc_š‹rçû_þo£
+(
+pxch
+);
+
+18 
+	`´štf
+("X’ v”siÚ %ld.%ld\n", 
+s64x’v”
+ >> 16, s64xenver & 0xffff);
+
+21 
+	}
+}
+
+	@src/xen_rtds_boost.c
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~<¡dlib.h
+>
+
+3 
+	~<¡ršg.h
+>
+
+4 
+	~<¡dšt.h
+>
+
+5 
+	~<uni¡d.h
+>
+
+6 
+	~<x’ù¾.h
+>
+
+9 
+	$maš
+(
+¬gc
+, * 
+¬gv
+[])
+
+11 
+s32»t
+;
+
+12 
+s32cmd
+;
+
+13 
+s32domid
+;
+
+14 
+s32výuid
+;
+
+15 if(4 !ð
+¬gc
+)
+
+17 
+	`´štf
+("Arg Err!\n");
+
+18 
+	`ex™
+(
+EXIT_FAILURE
+);
+
+21 
+s32cmd
+ = 
+	`©oi
+(
+¬gv
+[1]);
+
+22 
+s32domid
+ = 
+	`©oi
+(
+¬gv
+[2]);
+
+23 
+s32výuid
+ = 
+	`©oi
+(
+¬gv
+[3]);
+
+24 
+xc_š‹rçû
+ *
+pxch
+;
+
+26 
+pxch
+ = 
+	`xc_š‹rçû_Ý’
+(
+NULL
+, NULL, 0);
+
+27 
+s32»t
+ = 
+	`xc_¹ds_boo¡
+(
+pxch
+, 
+s32cmd
+, 
+s32domid
+, 
+s32výuid
+);
+
+28 
+	`xc_š‹rçû_þo£
+(
+pxch
+);
+
+30 
+	`´štf
+("R‘ = %d\n", 
+s32»t
+);
+
+33 
+	}
+}
+
+	@src/xen_ver.c
 
 1 
 	~<¡dio.h
@@ -66606,9 +66818,11 @@ _ASM_GENERIC_ERRNO_BASE_H
 .
 1
 /usr/include
-74
-1977
-src/main.c
+76
+2018
+src/xen_domctl.c
+src/xen_rtds_boost.c
+src/xen_ver.c
 /usr/include/stdint.h
 /usr/include/stdio.h
 /usr/include/stdlib.h
